@@ -50,19 +50,26 @@
     </script>
     <script type="text/javascript">
 
-        function myFunction() {
-            /* Get the text field */
-            var copyText = document.getElementById("guid");
+        //function myFunction() {
+        //    /* Get the text field */
+        //    var copyText = document.getElementById("guid");
 
-            /* Select the text field */
-            copyText.select();
+        //    /* Select the text field */
+        //    copyText.select();
 
-            /* Copy the text inside the text field */
-            document.execCommand("copy");
+        //    /* Copy the text inside the text field */
+        //    document.execCommand("copy");
 
-            /* Alert the copied text */
-            alert("Copied to the clipboard guid: " + copyText.value);
+        //    /* Alert the copied text */
+        //  //  alert("Copied to the clipboard guid: " + copyText.value);
+        //}
+        //Blazor.registerFunction('CopyGuidJava', function (text) {
+        //    return navigator.clipboard.writeText(text);
+        //});
+        function copyGuidJava(guid) {
+            return navigator.clipboard.writeText(guid);
         }
+
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
     <script src="_framework/blazor.webassembly.js"></script>
