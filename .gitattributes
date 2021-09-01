@@ -43,7 +43,7 @@
 *.dll   binary
 *.gz   binary
 *.bz   binary
-
+*.js   binary
 ###############################################################################
 # diff behavior for common document formats
 # 
